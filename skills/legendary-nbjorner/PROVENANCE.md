@@ -12,10 +12,12 @@ needed to use the skill.
 - **Generalization:** applying the practices to other reasoning tools, and
   the optional external checks, are the skill authors' additions, not
   findings from the history.
-- **Not endorsed:** Nikolaj Bjørner, Microsoft, and the Z3 project did not
-  write, review, or endorse this skill.
+- **Consent:** Nikolaj Bjørner proposed the name `legendary-nbjorner` and
+  agreed to the skill's publication (2026-10-21). He did not write it, and the
+  content is the skill authors' reading of his public history. Microsoft and
+  the Z3 project are not involved and do not endorse it.
 - **History:** first written as `z3-core-dev-practices`, then generalized as
-  `reasoning-tool-dev-practices` and renamed `legendary-nbjorner`. The name
-  is the skill authors' tribute and implies no authorship or endorsement. Prepared with AI assistance (Claude Code, Codex) for the ai4ardev
+  `reasoning-tool-dev-practices` and renamed `legendary-nbjorner`.
+  Prepared with AI assistance (Claude Code, Codex) for the ai4ardev
   agent-skills catalog. The commit-level analysis is recorded in the pull
   request that added the skill.

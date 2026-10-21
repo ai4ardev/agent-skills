@@ -12,8 +12,8 @@ provers, model checkers, optimization tools, or synthesis tools.
 The practices were distilled from **one developer on one project**: Nikolaj
 Bjørner's public Z3 history (11,364 non-merge commits, 2012 to 2026).
 **Applying them beyond Z3 is an extrapolation by the skill authors.** Nikolaj
-Bjørner, Microsoft, and the Z3 project **did not write or endorse this skill**;
-its name is a tribute chosen by the skill authors.
+Bjørner proposed the skill's name and agreed to its publication, but did not
+write it; Microsoft and the Z3 project are not involved.
 Everything needed to use it is in this file and, for Z3, in
 `references/z3.md`; nothing here requires network access.
 

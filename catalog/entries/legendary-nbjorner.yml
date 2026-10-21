@@ -18,5 +18,5 @@ license:
   id: MIT
   url_or_path: skills/legendary-nbjorner/LICENSE.txt
 rationale: Helps developers of solvers, provers, model checkers, optimization and synthesis tools localize broken invariants, preserve models and witnesses, handle incomplete runs, and record regressions. Keeps the Z3 evidence separate from the authors' broader extrapolation and reports the limits of optional external checks.
-limitations: Based on one developer on one project, not written or endorsed by Nikolaj Bjørner, Microsoft, or Z3. Generalization beyond Z3 is an extrapolation by the skill authors, not a cross-project evaluation. Z3 details were checked at the recorded source revision and date; external checks are optional and skipped checks establish nothing.
+limitations: Based on one developer on one project, not written by Nikolaj Bjørner (who proposed the name and agreed to publication) and not endorsed by Microsoft or the Z3 project. Generalization beyond Z3 is an extrapolation by the skill authors, not a cross-project evaluation. Z3 details were checked at the recorded source revision and date; external checks are optional and skipped checks establish nothing.
 last_inspected: 2026-10-21

@@ -20,7 +20,7 @@ Dev and test workflows for reasoning-tool internals, extrapolated from one devel
 - **License:** [MIT](<skills/legendary-nbjorner/LICENSE.txt>)
 - **Tags:** reasoning-tools, smt-solvers, sat-solvers, theorem-provers, model-checking, optimization, synthesis, correctness, regression-testing
 - **Last inspected:** 2026-10-21
-- **Limitations:** Based on one developer on one project, not written or endorsed by Nikolaj Bjørner, Microsoft, or Z3. Generalization beyond Z3 is an extrapolation by the skill authors, not a cross-project evaluation. Z3 details were checked at the recorded source revision and date; external checks are optional and skipped checks establish nothing.
+- **Limitations:** Based on one developer on one project, not written by Nikolaj Bjørner (who proposed the name and agreed to publication) and not endorsed by Microsoft or the Z3 project. Generalization beyond Z3 is an extrapolation by the skill authors, not a cross-project evaluation. Z3 details were checked at the recorded source revision and date; external checks are optional and skipped checks establish nothing.
 
 <a id="legendary-nbjorner-rationale"></a>**Why it is listed:** Helps developers of solvers, provers, model checkers, optimization and synthesis tools localize broken invariants, preserve models and witnesses, handle incomplete runs, and record regressions. Keeps the Z3 evidence separate from the authors' broader extrapolation and reports the limits of optional external checks.
 
