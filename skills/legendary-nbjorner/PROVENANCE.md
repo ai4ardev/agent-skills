@@ -14,7 +14,8 @@ needed to use the skill.
   findings from the history.
 - **Not endorsed:** Nikolaj Bjørner, Microsoft, and the Z3 project did not
   write, review, or endorse this skill.
-- **History:** first written as `z3-core-dev-practices`, then generalized and
-  renamed. Prepared with AI assistance (Claude Code, Codex) for the ai4ardev
+- **History:** first written as `z3-core-dev-practices`, then generalized as
+  `reasoning-tool-dev-practices` and renamed `legendary-nbjorner`. The name
+  is the skill authors' tribute and implies no authorship or endorsement. Prepared with AI assistance (Claude Code, Codex) for the ai4ardev
   agent-skills catalog. The commit-level analysis is recorded in the pull
   request that added the skill.

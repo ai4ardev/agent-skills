@@ -1,10 +1,10 @@
 ---
-name: reasoning-tool-dev-practices
+name: legendary-nbjorner
 description: Develop and test reasoning-tool internals in dev and test modes, including SMT/SAT solvers, provers, model checkers, optimization and synthesis tools. Use for input-driven fixes, pipeline changes, model or witness reconstruction, resource handling, and regression tests. Extrapolated by the skill authors from one developer's Z3 commit history, with a verified Z3 worked reference. Not for routine queries against these tools, general application development, or claiming formal correctness from test results.
 license: MIT
 ---
 
-# Reasoning tool development practices
+# legendary-nbjorner: reasoning tool development practices
 
 Use these practices when changing or testing the internals of SMT/SAT solvers,
 provers, model checkers, optimization tools, or synthesis tools.
@@ -12,7 +12,8 @@ provers, model checkers, optimization tools, or synthesis tools.
 The practices were distilled from **one developer on one project**: Nikolaj
 Bjørner's public Z3 history (11,364 non-merge commits, 2012 to 2026).
 **Applying them beyond Z3 is an extrapolation by the skill authors.** Nikolaj
-Bjørner, Microsoft, and the Z3 project **did not write or endorse this skill**.
+Bjørner, Microsoft, and the Z3 project **did not write or endorse this skill**;
+its name is a tribute chosen by the skill authors.
 Everything needed to use it is in this file and, for Z3, in
 `references/z3.md`; nothing here requires network access.
 

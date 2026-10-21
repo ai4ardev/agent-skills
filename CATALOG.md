@@ -8,21 +8,21 @@ see [What do the badges mean?](README.md#what-do-the-badges-mean) and the
 
 ## Skills maintained here
 
-<a id="reasoning-tool-dev-practices"></a>
+<a id="legendary-nbjorner"></a>
 
-### Reasoning tool development practices
+### legendary-nbjorner: reasoning tool development practices
 
-**[Listed](#reasoning-tool-dev-practices-rationale)**
+**[Listed](#legendary-nbjorner-rationale)**
 
 Dev and test workflows for reasoning-tool internals, extrapolated from one developer's Z3 commit history, with a Z3 worked reference.
 
-- **Source:** [skills/reasoning-tool-dev-practices](<skills/reasoning-tool-dev-practices>) (maintained in this repository)
-- **License:** [MIT](<skills/reasoning-tool-dev-practices/LICENSE.txt>)
+- **Source:** [skills/legendary-nbjorner](<skills/legendary-nbjorner>) (maintained in this repository)
+- **License:** [MIT](<skills/legendary-nbjorner/LICENSE.txt>)
 - **Tags:** reasoning-tools, smt-solvers, sat-solvers, theorem-provers, model-checking, optimization, synthesis, correctness, regression-testing
 - **Last inspected:** 2026-10-21
 - **Limitations:** Based on one developer on one project, not written or endorsed by Nikolaj Bjørner, Microsoft, or Z3. Generalization beyond Z3 is an extrapolation by the skill authors, not a cross-project evaluation. Z3 details were checked at the recorded source revision and date; external checks are optional and skipped checks establish nothing.
 
-<a id="reasoning-tool-dev-practices-rationale"></a>**Why it is listed:** Helps developers of solvers, provers, model checkers, optimization and synthesis tools localize broken invariants, preserve models and witnesses, handle incomplete runs, and record regressions. Keeps the Z3 evidence separate from the authors' broader extrapolation and reports the limits of optional external checks.
+<a id="legendary-nbjorner-rationale"></a>**Why it is listed:** Helps developers of solvers, provers, model checkers, optimization and synthesis tools localize broken invariants, preserve models and witnesses, handle incomplete runs, and record regressions. Keeps the Z3 evidence separate from the authors' broader extrapolation and reports the limits of optional external checks.
 
 ## External skills
 

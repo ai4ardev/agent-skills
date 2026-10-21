@@ -1,9 +1,9 @@
-id: reasoning-tool-dev-practices
-title: Reasoning tool development practices
+id: legendary-nbjorner
+title: "legendary-nbjorner: reasoning tool development practices"
 summary: Dev and test workflows for reasoning-tool internals, extrapolated from one developer's Z3 commit history, with a Z3 worked reference.
 location:
   kind: local
-  path: skills/reasoning-tool-dev-practices
+  path: skills/legendary-nbjorner
 tags:
   - reasoning-tools
   - smt-solvers
@@ -16,7 +16,7 @@ tags:
   - regression-testing
 license:
   id: MIT
-  url_or_path: skills/reasoning-tool-dev-practices/LICENSE.txt
+  url_or_path: skills/legendary-nbjorner/LICENSE.txt
 rationale: Helps developers of solvers, provers, model checkers, optimization and synthesis tools localize broken invariants, preserve models and witnesses, handle incomplete runs, and record regressions. Keeps the Z3 evidence separate from the authors' broader extrapolation and reports the limits of optional external checks.
 limitations: Based on one developer on one project, not written or endorsed by Nikolaj Bjørner, Microsoft, or Z3. Generalization beyond Z3 is an extrapolation by the skill authors, not a cross-project evaluation. Z3 details were checked at the recorded source revision and date; external checks are optional and skipped checks establish nothing.
 last_inspected: 2026-10-21
