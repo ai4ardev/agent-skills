@@ -133,7 +133,7 @@ class ValidationTests(CatalogTestCase):
     def test_evidence_needs_a_real_source(self):
         self.write("catalog/entries/ext-skill.yml", EXTERNAL_ENTRY + textwrap.dedent("""\
             evidence:
-              - kind: evaluation
+              - kind: usage-report
                 url: javascript:alert(1)
                 summary: Claims things.
                 outcome: positive
@@ -168,16 +168,27 @@ class BadgeTests(CatalogTestCase):
                 url: https://example.org/report
                 summary: Helped triage a bug.
                 outcome: positive
-              - kind: evaluation
-                url: https://example.org/eval
-                summary: Compared with baseline.
+              - kind: usage-report
+                url: https://example.org/other
+                summary: Did not help on another task.
                 outcome: negative
             """)
         badges = {b.label: b for b in catalog.badges(entry)}
-        self.assertEqual(set(badges), {"Listed", "Reported useful", "Evaluated"})
+        self.assertEqual(set(badges), {"Listed", "Reported useful"})
         self.assertEqual(badges["Reported useful"].href, "https://example.org/report")
-        self.assertIn("negative", badges["Evaluated"].note)
         self.assertTrue(catalog.cautions(entry))
+
+    def test_evaluation_evidence_is_not_supported(self):
+        self.write("catalog/entries/ext-skill.yml", EXTERNAL_ENTRY + textwrap.dedent("""\
+            evidence:
+              - kind: evaluation
+                url: https://example.org/eval
+                summary: Compared with baseline.
+                outcome: positive
+            """))
+        with self.assertRaises(catalog.ValidationError) as ctx:
+            catalog.load_catalog(self.root)
+        self.assertIn("kind must be one of", "\n".join(ctx.exception.errors))
 
     def test_negative_usage_report_is_not_reported_useful(self):
         entry = self.entry("""\

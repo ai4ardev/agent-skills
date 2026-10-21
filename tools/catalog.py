@@ -51,7 +51,7 @@ EVIDENCE_KEYS = {
     "kind", "url", "summary", "date", "skill_revision", "context",
     "limitations", "outcome", "reporter_role",
 }
-EVIDENCE_KINDS = {"usage-report", "evaluation"}
+EVIDENCE_KINDS = {"usage-report"}
 OUTCOMES = {"positive", "negative", "mixed"}
 REPORTER_ROLES = {"author", "maintainer", "independent"}
 STATUSES = {"needs-review"}
@@ -429,10 +429,6 @@ def badges(entry: Entry) -> list[Badge]:
     useful = [e for e in evidence_items(entry) if e["kind"] == "usage-report" and e["outcome"] in ("positive", "mixed")]
     if useful:
         out.append(Badge("Reported useful", useful[0]["url"], f"{len(useful)} report(s)" if len(useful) > 1 else ""))
-    evals = [e for e in evidence_items(entry) if e["kind"] == "evaluation"]
-    if evals:
-        outcomes = ", ".join(sorted({e["outcome"] for e in evals}))
-        out.append(Badge("Evaluated", evals[0]["url"], f"result: {outcomes}"))
     return out
 
 

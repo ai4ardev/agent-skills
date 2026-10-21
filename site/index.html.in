@@ -50,7 +50,6 @@
       <dt>Listed</dt><dd>Links to the reason the skill was included.</dd>
       <dt>Reviewed</dt><dd>Links to a recorded maintainer review of a stated version or scope.</dd>
       <dt>Reported useful</dt><dd>Links to an explicit user or project report of where it helped.</dd>
-      <dt>Evaluated</dt><dd>Links to an evaluation with a stated task, result and scope. Evaluated means evaluated, not successful.</dd>
     </dl>
     <p>These labels describe linked evidence; they are not a ranking and do not certify
     correctness, security, or effectiveness in your setting. See the

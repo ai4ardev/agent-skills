@@ -63,7 +63,7 @@ Leave a field out when it is not known; do not invent values to fill it.
 | `status: needs-review` | Known-broken source or materially stale advice. Shown as a caution. |
 | `caution` | A short visible warning, e.g. following a negative report. |
 | `review` | A recorded maintainer review (below). |
-| `evidence` | A list of linked reports or evaluations (below). |
+| `evidence` | A list of linked usage reports (below). |
 
 Unsupported fields are rejected, including ranking fields such as `rank`,
 `score`, or hand-assigned `badges`.
@@ -83,7 +83,7 @@ review:
 
 ```yaml
 evidence:
-  - kind: usage-report        # or: evaluation
+  - kind: usage-report        # the only kind
     url: https://...          # the actual public report, not a homepage
     summary: The specific claim this source supports.
     outcome: positive         # positive | negative | mixed
@@ -103,22 +103,22 @@ Badges are generated from the records above; they cannot be set by hand.
 | **Listed** | Always (every entry has a rationale and a real package). | The entry's rationale. |
 | **Reviewed** | A `review` record exists. | That review. |
 | **Reported useful** | A `usage-report` with outcome `positive` or `mixed`. | The first such report. |
-| **Evaluated** | Any `evaluation`, whatever its outcome. The outcome is shown next to the badge. | The first evaluation. |
 
 The labels are not ordered and entries are listed alphabetically. There are no
 star counts, install counts, or scores.
 
 Distinctions to keep in mind:
 
-- A test suite without results is a resource, not an evaluation.
-- Script smoke tests show that scripts run; they do not by themselves show
-  improved agent performance. State the evaluated property.
+- There is no "evaluated" badge. No benchmarks exist for these skills, and
+  this project does not run evaluations. A published study of a skill can be
+  linked from the entry's rationale or limitations, but earns no badge.
+- Script smoke tests show that scripts run; they do not show that a skill
+  helps.
 - A study of an underlying technique (differential testing, certificate
-  checking, ...) can justify a skill's design but is not an evaluation of the
-  skill.
+  checking, ...) can justify a skill's design but says nothing about the
+  skill itself.
 - Inclusion in a repository alone does not establish use. An explicit account
   of using a skill and finding it helpful supports "Reported useful".
-- "Evaluated" means evaluated, not successful.
 - Author and maintainer reports are fine when marked with `reporter_role`; do
   not present them as independent.
 - Merging an entry is not a review. "Reviewed" requires a recorded review of a
