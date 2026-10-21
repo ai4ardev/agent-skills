@@ -60,6 +60,9 @@
 $sections
 </main>
 <footer>
+  <p>This catalog was started at
+  <a href="https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/26431">Dagstuhl Seminar 26431,
+  <cite>Automated Reasoning in Arithmetic: Logic, Algorithms, Software</cite></a> (18&ndash;23 October 2026).</p>
   <p>An independent FM/AR community initiative. Its organization is inspired by
   Anthropic's skills repository; it is not an official Anthropic project. Each skill is
   governed by its own stated license.</p>
