@@ -39,7 +39,7 @@
     maintained in this repository; others are maintained upstream and linked.</p>
     <p>Read a skill's instructions and license before using it, and review any scripts before
     running them: installing a skill is a trust decision. For general-purpose coding skills, see
-    the <a href="$resources_url">general development resources</a>.</p>
+    the <a href="#general-resources">general development resources</a> below.</p>
     <p class="count">$count. Open requests for missing skills are tracked
     <a href="$requests_url">on GitHub</a>; they are requests, not available packages.</p>
   </section>
@@ -58,6 +58,30 @@
   </section>
 
 $sections
+
+  <section id="general-resources" aria-labelledby="resources-title">
+    <h2 id="resources-title">General development resources</h2>
+    <p>General-purpose skills and references, maintained upstream. They are linked
+    here rather than cataloged because they are not specific to FM/AR software;
+    check each one's license before use.</p>
+    <ul class="resources">
+      <li><a href="https://github.com/anthropics/skills">Anthropic's skills collection</a>:
+      general-purpose skills and examples. It contains both open-source and
+      source-available material; check each skill's license.</li>
+      <li><a href="https://agentskills.io/specification">Agent Skills specification</a>:
+      the package format used by this collection.</li>
+      <li><a href="https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md">Anthropic's Skill Creator</a>:
+      help with authoring and revising skills.</li>
+      <li><a href="https://github.com/DietrichGebert/ponytail">Ponytail</a>: makes an agent
+      reuse existing code, the standard library, and platform features before writing
+      new code. MIT licensed.</li>
+      <li><a href="https://github.com/blader/humanizer">Humanizer</a>: removes signs of
+      AI-generated writing from text, useful for documentation and skill prose.
+      MIT licensed.</li>
+    </ul>
+    <p>Other well-chosen collections can be proposed through a pull request that
+    edits <code>site/index.html.in</code>.</p>
+  </section>
 </main>
 <footer>
   <p>This catalog was started at
