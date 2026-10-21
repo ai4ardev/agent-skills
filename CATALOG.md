@@ -6,9 +6,24 @@ Entries are listed alphabetically. Badges are evidence labels, not a ranking;
 see [What do the badges mean?](README.md#what-do-the-badges-mean) and the
 [catalog policy](catalog/README.md).
 
-No skills are cataloged yet. We add entries only for real skills, with a
-stated reason for inclusion.
+## Skills maintained here
 
-- Know a suitable skill? [Suggest it](CONTRIBUTING.md#catalog-only-contributions).
-- Missing a workflow? [Request a skill](CONTRIBUTING.md#questions-and-requests).
-- Wrote one? [Contribute a skill](CONTRIBUTING.md#new-or-substantially-updated-local-skills).
+<a id="z3-core-dev-practices"></a>
+
+### Z3 core development practices
+
+**[Listed](#z3-core-dev-practices-rationale)**
+
+Dev and test workflows for changing and testing the Z3 SMT solver's C++ core, distilled from its principal developer's public commit history.
+
+- **Source:** [skills/z3-core-dev-practices](<skills/z3-core-dev-practices>) (maintained in this repository)
+- **License:** [MIT](<skills/z3-core-dev-practices/LICENSE.txt>)
+- **Tags:** smt-solvers, z3, correctness, regression-testing
+- **Last inspected:** 2026-10-21
+- **Limitations:** Inferred from commit history, not endorsed by the Z3 developers; specific to the Z3 code base.
+
+<a id="z3-core-dev-practices-rationale"></a>**Why it is listed:** Z3 is a widely used SMT solver, and its maintenance conventions (where fixes belong, how models survive preprocessing, where regressions live) are not written down in one place. This skill makes them available to agents working on Z3 itself.
+
+## External skills
+
+None yet.
