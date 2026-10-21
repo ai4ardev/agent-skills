@@ -8,21 +8,21 @@ see [What do the badges mean?](README.md#what-do-the-badges-mean) and the
 
 ## Skills maintained here
 
-<a id="z3-core-dev-practices"></a>
+<a id="reasoning-tool-dev-practices"></a>
 
-### Z3 core development practices
+### Reasoning tool development practices
 
-**[Listed](#z3-core-dev-practices-rationale)**
+**[Listed](#reasoning-tool-dev-practices-rationale)**
 
-Dev and test workflows for changing and testing the Z3 SMT solver's C++ core, distilled from its principal developer's public commit history.
+Dev and test workflows for reasoning-tool internals, extrapolated from one developer's Z3 commit history, with a Z3 worked reference.
 
-- **Source:** [skills/z3-core-dev-practices](<skills/z3-core-dev-practices>) (maintained in this repository)
-- **License:** [MIT](<skills/z3-core-dev-practices/LICENSE.txt>)
-- **Tags:** smt-solvers, z3, correctness, regression-testing
+- **Source:** [skills/reasoning-tool-dev-practices](<skills/reasoning-tool-dev-practices>) (maintained in this repository)
+- **License:** [MIT](<skills/reasoning-tool-dev-practices/LICENSE.txt>)
+- **Tags:** reasoning-tools, smt-solvers, sat-solvers, theorem-provers, model-checking, optimization, synthesis, correctness, regression-testing
 - **Last inspected:** 2026-10-21
-- **Limitations:** Inferred from commit history, not endorsed by the Z3 developers; specific to the Z3 code base.
+- **Limitations:** Based on one developer on one project, not written or endorsed by Nikolaj Bjørner, Microsoft, or Z3. Generalization beyond Z3 is an extrapolation by the skill authors, not a cross-project evaluation. Z3 details were checked at the recorded source revision and date; external checks are optional and skipped checks establish nothing.
 
-<a id="z3-core-dev-practices-rationale"></a>**Why it is listed:** Z3 is a widely used SMT solver, and its maintenance conventions (where fixes belong, how models survive preprocessing, where regressions live) are not written down in one place. This skill makes them available to agents working on Z3 itself.
+<a id="reasoning-tool-dev-practices-rationale"></a>**Why it is listed:** Helps developers of solvers, provers, model checkers, optimization and synthesis tools localize broken invariants, preserve models and witnesses, handle incomplete runs, and record regressions. Keeps the Z3 evidence separate from the authors' broader extrapolation and reports the limits of optional external checks.
 
 ## External skills
 
