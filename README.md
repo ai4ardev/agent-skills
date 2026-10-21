@@ -41,9 +41,9 @@ installation instructions and licenses.
 **Listed** links to the reason for inclusion. **Reviewed** links to a recorded
 maintainer review of a stated version or scope; merging a catalog entry is not,
 by itself, a review. **Reported useful** links to an explicit user or project
-report. **Evaluated** links to an evaluation with a stated task, result, and
-scope; it means evaluated, not successful. These are evidence labels, not a
-universal quality ranking.
+report. These are evidence labels, not a universal quality ranking. There is
+no "evaluated" label: no benchmarks exist for skills like these, and this
+project does not run them.
 
 A report can be useful without being a controlled experiment. A paper about an
 underlying technique is not, by itself, evidence that a particular agent skill

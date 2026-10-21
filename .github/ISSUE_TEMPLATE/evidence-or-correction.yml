@@ -15,7 +15,6 @@ body:
       label: Kind of report
       options:
         - Usage experience
-        - Evaluation result
         - Correction or stale content
         - Licensing concern
     validations:
@@ -23,7 +22,7 @@ body:
   - type: dropdown
     id: outcome
     attributes:
-      label: Outcome (for experience or evaluation reports)
+      label: Outcome (for usage reports)
       options:
         - Positive
         - Negative
