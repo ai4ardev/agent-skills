@@ -1,0 +1,32 @@
+name: Skill request
+description: Ask for a workflow that is missing. You do not need to write it.
+title: "[Skill request] "
+labels: [skill-request]
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: Task
+      description: What development or maintenance task should an agent help with?
+    validations:
+      required: true
+  - type: textarea
+    id: outputs
+    attributes:
+      label: Intended outputs
+      description: What should the agent produce (a review, a plan, a reproducer, a checklist, ...)?
+  - type: input
+    id: domain
+    attributes:
+      label: Target tools or domain
+      placeholder: e.g. SMT solvers, proof assistants, LP/MIP solvers, model checkers
+  - type: textarea
+    id: difficulty
+    attributes:
+      label: Current difficulty
+      description: What goes wrong today, with or without agents?
+  - type: textarea
+    id: related
+    attributes:
+      label: Known related skills or resources
+      description: Existing skills that partly cover this, if any. Cataloging an existing skill may be better than writing a new one.

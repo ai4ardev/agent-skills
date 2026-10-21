@@ -1,0 +1,23 @@
+name: Skill question
+description: Ask which skill suits a task, or how to use one.
+labels: [question]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Task and context
+      description: What are you working on? Tools, languages, agent, constraints.
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you have tried
+  - type: textarea
+    id: links
+    attributes:
+      label: Relevant links

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$title</title>
+<meta name="description" content="A community catalog of agent skills for developing formal-methods and automated-reasoning software.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <h1>$title</h1>
+  <p class="lede">A community-maintained selection of agent skills for designing, developing,
+  and maintaining formal-methods and automated-reasoning tools: logic solvers, theorem provers,
+  model checkers, synthesis tools, computer algebra systems, and optimization software.</p>
+  <nav aria-label="Project">
+    <ul>
+      <li><a href="$catalog_md_url">Catalog (Markdown)</a></li>
+      <li><a href="$readme_url">README</a></li>
+      <li><a href="$contributing_url">Contributing</a></li>
+      <li><a href="$issues_url">Issues</a></li>
+      <li><a href="$repo_url">Repository</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="actions" aria-label="Get involved">
+    <a class="action" href="$question_url">Ask a question</a>
+    <a class="action" href="$request_url">Request a skill</a>
+    <a class="action" href="$contributing_url">Contribute a skill</a>
+  </section>
+
+  <section aria-labelledby="about-title">
+    <h2 id="about-title">About this catalog</h2>
+    <p>Skills here address the distinctive engineering needs of reasoning software: semantic
+    correctness, certificates and witnesses, specification frontends, testing, symbolic or
+    numerical assumptions, performance analysis, and reproducibility. Some packages are
+    maintained in this repository; others are maintained upstream and linked.</p>
+    <p>Read a skill's instructions and license before using it, and review any scripts before
+    running them: installing a skill is a trust decision. For general-purpose coding skills, see
+    the <a href="$resources_url">general development resources</a>.</p>
+    <p class="count">$count. Open requests for missing skills are tracked
+    <a href="$requests_url">on GitHub</a>; they are requests, not available packages.</p>
+  </section>
+
+  <section aria-labelledby="badges-title">
+    <h2 id="badges-title">Evidence labels</h2>
+    <dl class="legend">
+      <dt>Listed</dt><dd>Links to the reason the skill was included.</dd>
+      <dt>Reviewed</dt><dd>Links to a recorded maintainer review of a stated version or scope.</dd>
+      <dt>Reported useful</dt><dd>Links to an explicit user or project report of where it helped.</dd>
+      <dt>Evaluated</dt><dd>Links to an evaluation with a stated task, result and scope. Evaluated means evaluated, not successful.</dd>
+    </dl>
+    <p>These labels describe linked evidence; they are not a ranking and do not certify
+    correctness, security, or effectiveness in your setting. See the
+    <a href="$badges_url">badge rules</a> and <a href="$policy_url">catalog policy</a>.</p>
+  </section>
+
+$sections
+</main>
+<footer>
+  <p>An independent FM/AR community initiative. Its organization is inspired by
+  Anthropic's skills repository; it is not an official Anthropic project. Each skill is
+  governed by its own stated license.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+name: Catalog suggestion
+description: Recommend an existing skill for the catalog.
+title: "[Catalog] "
+labels: [catalog-suggestion]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Package URL
+      description: Link to the exact skill package, ideally at a specific commit or tag.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: What it does and what it supports
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License URL or status
+      description: Link to its license, or say "unknown" if no license is stated.
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why it belongs here
+      description: Its relevance to developing FM/AR software.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Usage experience (optional)
+      description: If you used it, what for and how it went. Not required.
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to the skill
+      options:
+        - User
+        - Author or maintainer
+        - Neither
