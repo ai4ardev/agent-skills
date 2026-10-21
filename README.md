@@ -87,6 +87,12 @@ reproducible releases. These are requests, not already available packages.
   the package format used by this collection.
 - [Anthropic's Skill Creator](https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md):
   help with authoring and revising skills.
+- [Ponytail](https://github.com/DietrichGebert/ponytail): makes an agent
+  reuse existing code, the standard library, and platform features before
+  writing new code. MIT licensed.
+- [Humanizer](https://github.com/blader/humanizer): removes signs of
+  AI-generated writing from text, useful for documentation and skill prose.
+  MIT licensed.
 
 Other well-chosen collections can be proposed through a normal pull request.
 
