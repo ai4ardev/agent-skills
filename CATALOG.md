@@ -6,9 +6,24 @@ Entries are listed alphabetically. Badges are evidence labels, not a ranking;
 see [What do the badges mean?](README.md#what-do-the-badges-mean) and the
 [catalog policy](catalog/README.md).
 
-No skills are cataloged yet. We add entries only for real skills, with a
-stated reason for inclusion.
+## Skills maintained here
 
-- Know a suitable skill? [Suggest it](CONTRIBUTING.md#catalog-only-contributions).
-- Missing a workflow? [Request a skill](CONTRIBUTING.md#questions-and-requests).
-- Wrote one? [Contribute a skill](CONTRIBUTING.md#new-or-substantially-updated-local-skills).
+<a id="legendary-nbjorner"></a>
+
+### legendary-nbjorner: reasoning tool development practices
+
+**[Listed](#legendary-nbjorner-rationale)**
+
+Dev and test workflows for reasoning-tool internals, extrapolated from one developer's Z3 commit history, with a Z3 worked reference.
+
+- **Source:** [skills/legendary-nbjorner](<skills/legendary-nbjorner>) (maintained in this repository)
+- **License:** [MIT](<skills/legendary-nbjorner/LICENSE.txt>)
+- **Tags:** reasoning-tools, smt-solvers, sat-solvers, theorem-provers, model-checking, optimization, synthesis, correctness, regression-testing
+- **Last inspected:** 2026-10-21
+- **Limitations:** Based on one developer on one project, not written by Nikolaj Bjørner (who proposed the name and agreed to publication) and not endorsed by Microsoft or the Z3 project. Generalization beyond Z3 is an extrapolation by the skill authors, not a cross-project evaluation. Z3 details were checked at the recorded source revision and date; external checks are optional and skipped checks establish nothing.
+
+<a id="legendary-nbjorner-rationale"></a>**Why it is listed:** Helps developers of solvers, provers, model checkers, optimization and synthesis tools localize broken invariants, preserve models and witnesses, handle incomplete runs, and record regressions. Keeps the Z3 evidence separate from the authors' broader extrapolation and reports the limits of optional external checks.
+
+## External skills
+
+None yet.
