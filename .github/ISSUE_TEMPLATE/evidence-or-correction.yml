@@ -1,0 +1,54 @@
+name: Evidence or correction
+description: Report experience with a skill, a limitation, stale content, or a licensing concern.
+labels: [evidence]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Catalog entry or skill
+      placeholder: e.g. skill id or link
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Kind of report
+      options:
+        - Usage experience
+        - Evaluation result
+        - Correction or stale content
+        - Licensing concern
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Outcome (for experience or evaluation reports)
+      options:
+        - Positive
+        - Negative
+        - Mixed
+        - Not applicable
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim or correction
+      description: What happened, or what should change. Negative and mixed experiences are welcome.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source link (if public)
+  - type: textarea
+    id: context
+    attributes:
+      label: Version and context, if known
+      description: Skill revision, agent and tool versions, task.
+  - type: dropdown
+    id: role
+    attributes:
+      label: Your relationship to the skill
+      options:
+        - Independent user
+        - Author or maintainer
