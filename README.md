@@ -21,8 +21,8 @@ reproducibility. A skill may be tool-specific when it serves this community;
 it must say what it supports and where its advice does not apply.
 
 General-purpose coding and development resources are
-[linked below](#general-development-resources) rather than copied into this
-collection.
+[listed on the website](https://ai4ardev.github.io/agent-skills/#general-resources)
+rather than copied into this collection.
 
 ## Find and use a skill
 
@@ -80,21 +80,10 @@ reproducible releases. These are requests, not already available packages.
 
 ## General development resources
 
-- [Anthropic's skills collection](https://github.com/anthropics/skills):
-  general-purpose skills and examples, maintained upstream. It contains both
-  open-source and source-available material; check each skill's license.
-- [Agent Skills specification](https://agentskills.io/specification):
-  the package format used by this collection.
-- [Anthropic's Skill Creator](https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md):
-  help with authoring and revising skills.
-- [Ponytail](https://github.com/DietrichGebert/ponytail): makes an agent
-  reuse existing code, the standard library, and platform features before
-  writing new code. MIT licensed.
-- [Humanizer](https://github.com/blader/humanizer): removes signs of
-  AI-generated writing from text, useful for documentation and skill prose.
-  MIT licensed.
-
-Other well-chosen collections can be proposed through a normal pull request.
+General-purpose skills and references (Anthropic's skills collection, the
+Agent Skills specification, Skill Creator, Ponytail, Humanizer, and others)
+are listed on the
+[website](https://ai4ardev.github.io/agent-skills/#general-resources).
 
 ## Licensing and independence
 

@@ -678,7 +678,6 @@ def render_site(catalog: Catalog, repo: str, branch: str, root: Path = ROOT) -> 
         title=h(TITLE),
         repo_url=h(gh),
         readme_url=h(f"{blob}/README.md"),
-        resources_url=h(f"{blob}/README.md#general-development-resources"),
         badges_url=h(f"{blob}/README.md#what-do-the-badges-mean"),
         policy_url=h(f"{blob}/catalog/README.md"),
         catalog_md_url=h(f"{blob}/CATALOG.md"),

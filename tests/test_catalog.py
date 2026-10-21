@@ -197,6 +197,7 @@ class RenderTests(CatalogTestCase):
         page = catalog.render_site(cat, "owner/repo", "main", self.root)
         self.assertIn("No skills cataloged yet", page)
         self.assertIn("0 skills cataloged", page)
+        self.assertIn('id="general-resources"', page)
         self.assertNotIn('class="entry"', page)
 
     def test_html_and_markdown_escaping(self):
