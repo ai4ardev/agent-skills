@@ -8,6 +8,22 @@ see [What do the badges mean?](README.md#what-do-the-badges-mean) and the
 
 ## Skills maintained here
 
+<a id="inspector-barbosa"></a>
+
+### inspector-barbosa: pedantic inspection of reasoning-tool changes
+
+**[Listed](#inspector-barbosa-rationale)**
+
+Dev and pm inspection workflows for reasoning-tool changes, extrapolated from one developer's cvc5 commits and code reviews, with a cvc5 worked reference.
+
+- **Source:** [skills/inspector-barbosa](<skills/inspector-barbosa>) (maintained in this repository)
+- **License:** [MIT](<skills/inspector-barbosa/LICENSE.txt>)
+- **Tags:** reasoning-tools, smt-solvers, sat-solvers, proof-checking, code-review, correctness, regression-testing, project-management
+- **Last inspected:** 2026-10-22
+- **Limitations:** Based on one developer on one project, not written by Haniel Barbosa (who agreed to the skill and its name) and not endorsed by the cvc5 project. Generalization beyond cvc5 is an extrapolation by the skill authors, not a cross-project evaluation. cvc5 details were checked at the recorded source revision and date; external checks are optional and skipped checks establish nothing.
+
+<a id="inspector-barbosa-rationale"></a>**Why it is listed:** Helps maintainers and contributors of solvers, provers, and proof checkers review changes line by line and as pull requests. It separates blocking soundness and proof issues from nits, asks for documented contracts and minimized regressions, and keeps CI, follow-up issues, and release notes in order.
+
 <a id="legendary-nbjorner"></a>
 
 ### legendary-nbjorner: reasoning tool development practices

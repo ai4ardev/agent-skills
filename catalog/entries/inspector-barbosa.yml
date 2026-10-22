@@ -1,0 +1,21 @@
+id: inspector-barbosa
+title: "inspector-barbosa: pedantic inspection of reasoning-tool changes"
+summary: Dev and pm inspection workflows for reasoning-tool changes, extrapolated from one developer's cvc5 commits and code reviews, with a cvc5 worked reference.
+location:
+  kind: local
+  path: skills/inspector-barbosa
+tags:
+  - reasoning-tools
+  - smt-solvers
+  - sat-solvers
+  - proof-checking
+  - code-review
+  - correctness
+  - regression-testing
+  - project-management
+license:
+  id: MIT
+  url_or_path: skills/inspector-barbosa/LICENSE.txt
+rationale: Helps maintainers and contributors of solvers, provers, and proof checkers review changes line by line and as pull requests. It separates blocking soundness and proof issues from nits, asks for documented contracts and minimized regressions, and keeps CI, follow-up issues, and release notes in order.
+limitations: Based on one developer on one project, not written by Haniel Barbosa (who agreed to the skill and its name) and not endorsed by the cvc5 project. Generalization beyond cvc5 is an extrapolation by the skill authors, not a cross-project evaluation. cvc5 details were checked at the recorded source revision and date; external checks are optional and skipped checks establish nothing.
+last_inspected: 2026-10-22
