@@ -110,6 +110,8 @@ dd { margin: 0; overflow-wrap: anywhere; }
   padding: .5rem .75rem;
 }
 
+.evidence-details { margin: .75rem 0 0; }
+.evidence-details summary { cursor: pointer; font-weight: 600; }
 .evidence li { margin-bottom: .35rem; }
 .evidence ul { color: var(--muted); font-size: .92rem; }
 

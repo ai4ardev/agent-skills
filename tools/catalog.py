@@ -640,7 +640,13 @@ def render_entry_html(entry: Entry, links: Links) -> str:
                 f"<li>{a(e['kind'], e['url'])} ({h(e['outcome'])}): {h(e['summary'])}"
                 f"<ul>{''.join(details)}</ul></li>"
             )
-        parts.append(f'<div id="{eid}-evidence"><strong>Evidence:</strong><ul class="evidence">{"".join(items)}</ul></div>')
+        # Collapsed by default so long evidence lists do not swamp the page.
+        count = len(items)
+        parts.append(
+            f'<details class="evidence-details" id="{eid}-evidence">'
+            f'<summary>Evidence ({count} record{"" if count == 1 else "s"})</summary>'
+            f'<ul class="evidence">{"".join(items)}</ul></details>'
+        )
     parts.append("</article>")
     return "\n".join(parts)
 
