@@ -12,7 +12,7 @@ see [What do the badges mean?](README.md#what-do-the-badges-mean) and the
 
 ### legendary-nbjorner: reasoning tool development practices
 
-**[Listed](#legendary-nbjorner-rationale)**
+**[Listed](#legendary-nbjorner-rationale)** · **[Reported useful](<https://github.com/ai4ardev/agent-skills/pull/15>)**
 
 Dev and test workflows for reasoning-tool internals, extrapolated from one developer's Z3 commit history, with a Z3 worked reference.
 
@@ -23,6 +23,15 @@ Dev and test workflows for reasoning-tool internals, extrapolated from one devel
 - **Limitations:** Based on one developer on one project, not written by Nikolaj Bjørner (who proposed the name and agreed to publication) and not endorsed by Microsoft or the Z3 project. Generalization beyond Z3 is an extrapolation by the skill authors, not a cross-project evaluation. Z3 details were checked at the recorded source revision and date; external checks are optional and skipped checks establish nothing.
 
 <a id="legendary-nbjorner-rationale"></a>**Why it is listed:** Helps developers of solvers, provers, model checkers, optimization and synthesis tools localize broken invariants, preserve models and witnesses, handle incomplete runs, and record regressions. Keeps the Z3 evidence separate from the authors' broader extrapolation and reports the limits of optional external checks.
+
+**Evidence:**
+
+- [usage-report](<https://github.com/ai4ardev/agent-skills/pull/15>) (positive): In a review and fix pass on a parity-game solver's benchmark runner, the skill's test-mode rules surfaced two problems that earlier reviews without it missed. Two memory regression tests were always skipped under meson and CI, and the benchmark CSV mixed rows from two solver builds without recording which.
+  - Reported by: author
+  - Date: 2026-10-22
+  - Skill revision: ab6723ffcc06dc88a1f00122555fdf818ed4ebd7
+  - Context: strahler-tree-experiments (C23 parity-game solvers). Codex CLI with gpt-6.1-sol at xhigh effort, with the Ponytail skill; SKILL.md only, without references/z3.md. One review pass and one fix pass.
+  - Limitations: One project and one review, reported by the skill's author. Not a controlled comparison; the earlier reviews without the skill covered different diffs. It shows the problems were found, not that the skill caused it.
 
 ## External skills
 
