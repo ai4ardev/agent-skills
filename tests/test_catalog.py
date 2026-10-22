@@ -222,6 +222,19 @@ class RenderTests(CatalogTestCase):
         self.assertNotIn("<script>", markdown)
         self.assertNotIn("[x](javascript:y)", markdown)
 
+    def test_evidence_is_collapsed_on_site(self):
+        self.write("catalog/entries/ext-skill.yml", EXTERNAL_ENTRY + textwrap.dedent("""\
+            evidence:
+              - kind: usage-report
+                url: https://example.org/report
+                summary: Helped triage a bug.
+                outcome: positive
+            """))
+        page = catalog.render_site(catalog.load_catalog(self.root), "owner/repo", "main", self.root)
+        self.assertIn('<details class="evidence-details" id="ext-skill-evidence">', page)
+        self.assertIn("<summary>Evidence (1 record)</summary>", page)
+        self.assertNotIn("<details open", page)
+
     def test_project_subpath_links(self):
         self.add_local()
         cat = catalog.load_catalog(self.root)
