@@ -12,7 +12,7 @@ see [What do the badges mean?](README.md#what-do-the-badges-mean) and the
 
 ### inspector-barbosa: pedantic inspection of reasoning-tool changes
 
-**[Listed](#inspector-barbosa-rationale)**
+**[Listed](#inspector-barbosa-rationale)** · **[Reported useful](<https://github.com/michaelcadilhac/posets/blob/aa61043b1227f65bbee1252aa51198de0dbceaab/experiments/posets-2026-11/default-rank/reports/reviewer-experience-report.txt>)**
 
 Dev and pm inspection workflows for reasoning-tool changes, extrapolated from one developer's cvc5 commits and code reviews, with a cvc5 worked reference.
 
@@ -23,6 +23,15 @@ Dev and pm inspection workflows for reasoning-tool changes, extrapolated from on
 - **Limitations:** Based on one developer on one project, not written by Haniel Barbosa (who agreed to the skill and its name) and not endorsed by the cvc5 project. Generalization beyond cvc5 is an extrapolation by the skill authors, not a cross-project evaluation. cvc5 details were checked at the recorded source revision and date; external checks are optional and skipped checks establish nothing.
 
 <a id="inspector-barbosa-rationale"></a>**Why it is listed:** Helps maintainers and contributors of solvers, provers, and proof checkers review changes line by line and as pull requests. It separates blocking soundness and proof issues from nits, asks for documented contracts and minimized regressions, and keeps CI, follow-up issues, and release notes in order.
+
+**Evidence:**
+
+- [usage-report](<https://github.com/michaelcadilhac/posets/blob/aa61043b1227f65bbee1252aa51198de0dbceaab/experiments/posets-2026-11/default-rank/reports/reviewer-experience-report.txt>) (mixed): In Posets PR 40, an agent using the skill spotted missing allocation-hook configuration that let memory tests pass with zero counters. It also raised a subnormal-value policy validation issue under fast-math. The benchmark and coding agents reproduced and fixed these issues. The reviewer helped distinguish what the tests and measurements established from what remained uncertain.
+  - Reported by: author
+  - Date: 2026-11-09
+  - Skill revision: 7bcc712af972ccea5f8b6559cdd2fb328841aef7
+  - Context: C++ dominance data structures, operation replay and Acacia synthesis benchmarks. The Barbosa- and Nbjorner-guided reviewers both used GPT-6.1 Sol at xhigh; coding used Ponytail. The linked report and contribution ledger separate reviewer findings from reproduction, fixes and benchmark execution by other agents.
+  - Limitations: One project, reported by the skill's author. Reviewers had different assignments and shared findings; this was not a controlled comparison. Both missed a compilation error caught by the real build. The report does not establish superiority over Nbjorner, reliable comparative time or cost, or that the skill caused the findings. The named researchers did not participate.
 
 <a id="legendary-nbjorner"></a>
 
