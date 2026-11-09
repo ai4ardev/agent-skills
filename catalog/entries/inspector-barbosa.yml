@@ -19,3 +19,13 @@ license:
 rationale: Helps maintainers and contributors of solvers, provers, and proof checkers review changes line by line and as pull requests. It separates blocking soundness and proof issues from nits, asks for documented contracts and minimized regressions, and keeps CI, follow-up issues, and release notes in order.
 limitations: Based on one developer on one project, not written by Haniel Barbosa (who agreed to the skill and its name) and not endorsed by the cvc5 project. Generalization beyond cvc5 is an extrapolation by the skill authors, not a cross-project evaluation. cvc5 details were checked at the recorded source revision and date; external checks are optional and skipped checks establish nothing.
 last_inspected: 2026-10-22
+evidence:
+  - kind: usage-report
+    url: https://github.com/michaelcadilhac/posets/blob/aa61043b1227f65bbee1252aa51198de0dbceaab/experiments/posets-2026-11/default-rank/reports/reviewer-experience-report.txt
+    summary: In Posets PR 40, an agent using the skill spotted missing allocation-hook configuration that let memory tests pass with zero counters. It also raised a subnormal-value policy validation issue under fast-math. The benchmark and coding agents reproduced and fixed these issues. The reviewer helped distinguish what the tests and measurements established from what remained uncertain.
+    outcome: mixed
+    date: 2026-11-09
+    skill_revision: 7bcc712af972ccea5f8b6559cdd2fb328841aef7
+    context: C++ dominance data structures, operation replay and Acacia synthesis benchmarks. The Barbosa- and Nbjorner-guided reviewers both used GPT-6.1 Sol at xhigh; coding used Ponytail. The linked report and contribution ledger separate reviewer findings from reproduction, fixes and benchmark execution by other agents.
+    limitations: One project, reported by the skill's author. Reviewers had different assignments and shared findings; this was not a controlled comparison. Both missed a compilation error caught by the real build. The report does not establish superiority over Nbjorner, reliable comparative time or cost, or that the skill caused the findings. The named researchers did not participate.
+    reporter_role: author
